@@ -122,6 +122,18 @@ class Selectize extends Nette\Forms\Controls\BaseControl
 
 
 	/**
+	* Sets items in select box.
+	* @param array $items
+	* @return self
+	*/
+	public function setItems(array $items)
+	{
+		$this->entity = $items;
+		return $this;
+	}
+
+
+	/**
 	 * Returns first prompt item?
 	 * @return mixed
 	 */
